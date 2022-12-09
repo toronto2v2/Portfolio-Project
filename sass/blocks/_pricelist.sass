@@ -1,0 +1,46 @@
+.price-list
+    padding-top: 60px
+    &__title
+        text-align: center
+        &::before
+            left: 50%
+            transform: translateX(-50%)
+    &__grid
+        margin-top: 60px
+        padding: 0 50px
+        display: grid
+        justify-content: space-between
+        grid-template: minmax(155px, auto) / 366px 366px
+        &-item
+            display: flex
+            justify-content: space-between
+            flex-wrap: wrap
+        &-title
+            font-weight: 700
+            font-size: 14px
+            line-height: 21px
+            color: #000000
+            flex: 1 0 0
+            position: relative
+            +before_round-small
+            
+        &-price
+            text-align: right
+            font-weight: 700
+            font-size: 14px
+            line-height: 21px
+            color: #000000
+            flex: 1 0 0
+        &-descr
+            font-weight: 500
+            font-size: 12px
+            line-height: 18px
+            color: #000000
+            margin-top: 5px
+    &__column
+        display: flex
+        flex-direction: column
+        gap: 15px 0
+        padding-left: 25px
+        
+            

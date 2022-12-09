@@ -1,0 +1,31 @@
+=before_round
+    &::before
+        content: ''
+        position: absolute
+        border-radius: 100%
+        width: 36px
+        height: 36px
+        background: $main-color
+        z-index: -1
+        top: -25%
+        left: -13px
+
+
+=before_centered
+    &::before
+        top: -6px
+        left: 50%
+        transform: translateX(-50%)
+
+=before_round-small
+    &::before
+        content: ''
+        position: absolute
+        border-radius: 100%
+        width: 15px
+        height: 15px
+        background: $main-color
+        z-index: -1
+        top: 4px
+        left: -25px
+
